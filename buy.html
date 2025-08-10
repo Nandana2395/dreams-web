@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dream Marketplace - Buy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1f29, #3a2f4d, #6b4b7e);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background: rgba(20,20,30,0.9);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: #f0eaff;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #ff8bff;
+    border-radius: 2px;
+  }
+  main {
+    padding: 160px 20px 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 139, 255, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px #ff8bff;
+  }
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .btn-buy {
+    background: linear-gradient(45deg, #ff8bff, #8be0ff);
+    border: none;
+    border-radius: 30px;
+    color: #1e1f29;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff8bff;
+    transition: 0.3s ease;
+  }
+  .btn-buy:hover {
+    box-shadow: 0 0 30px #ff8bff;
+    transform: scale(1.05);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    background: rgba(20,20,30,0.9);
+    font-size: 1rem;
+    color: #f0eaff;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy</a>
+  <a href="sell.html">Sell</a>
+  <a href="analyse.html">Analyse</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Buy Dreams</h1>
+  <div class="cards">
+    <div class="card">
+      <h3>Horror Dreams</h3>
+      <p>Experience the thrill of fear in a safe dream environment.</p>
+      <button class="btn-buy">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Fantasy Dreams</h3>
+      <p>Explore magical realms and meet mythical creatures.</p>
+      <button class="btn-buy">Buy Now</button>
+    </div>
+    <div class="card">
+      <h3>Romantic Dreams</h3>
+      <p>Live the sweetest love stories in your sleep.</p>
+      <button class="btn-buy">Buy Now</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Dream Marketplace
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dream Marketplace - Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1f29, #3a2f4d, #6b4b7e);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background: rgba(20,20,30,0.9);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: #f0eaff;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #ff8bff;
+    border-radius: 2px;
+  }
+  main {
+    padding: 160px 20px 80px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+  }
+  .contact-info {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(255, 139, 255, 0.6);
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+  .contact-info p {
+    margin: 15px 0;
+  }
+  .contact-info strong {
+    color: #ff8bff;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    background: rgba(20,20,30,0.9);
+    font-size: 1rem;
+    color: #f0eaff;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="DREAM.html">Home</a>
+  <a href="buy.html">Buy</a>
+  <a href="sell.html">Sell</a>
+  <a href="analyse.html">Analyse</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Contact Us</h1>
+  <div class="contact-info">
+    <p><strong>Email:</strong> support@dreammarketplace.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> 123 Dream Lane, Imagination City, Dreamland</p>
+    <p>We’re here to help you on your dream journey. Reach out anytime!</p>
+  </div>
+</main>
+
+<footer>
+  © 2025 Dream Marketplace
+</footer>
+
+</body>
+</html>
